@@ -1,6 +1,4 @@
-/* ==========================================================================
-   AuraMart E-Commerce: Core Application Controller & Hash Router
-   ========================================================================== */
+// Week 5: AuraMart App Controller & Router
 
 (function() {
   'use strict';

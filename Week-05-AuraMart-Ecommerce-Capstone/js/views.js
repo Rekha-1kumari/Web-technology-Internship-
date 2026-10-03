@@ -1,6 +1,4 @@
-/* ==========================================================================
-   AuraMart E-Commerce: Client-Side Hash Router & View Renderers
-   ========================================================================== */
+// AuraMart View Templates & Renderers
 
 (function() {
   'use strict';
@@ -14,7 +12,7 @@
         <section class="hero-banner">
           <div>
             <div class="hero-pill">
-              <span>&#9889;</span> Season Finale 2026 Collection
+              <span>&#9889;</span> New Arrival Collection
             </div>
             <h1 class="hero-title">Elevate Your Everyday Digital Lifestyle</h1>
             <p class="hero-sub">
@@ -35,7 +33,7 @@
           <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; flex-wrap: wrap;">
             <div>
               <h2 style="font-family: var(--font-heading); font-size: 2rem;">Featured Highlights</h2>
-              <p style="color: var(--text-muted);">Top reviewed engineering peripherals</p>
+              <p style="color: var(--text-muted);">Popular electronics and accessories</p>
             </div>
             <a href="#/products" style="color: var(--primary); font-weight: 600;">View Entire Catalog &rarr;</a>
           </div>
@@ -396,7 +394,7 @@
           <div style="text-align: center; margin-bottom: 2rem;">
             <div style="font-size: 3.5rem; color: var(--accent-emerald);">&#10004;</div>
             <h1 style="font-family: var(--font-heading); font-size: 2rem;">Order Confirmed!</h1>
-            <p style="color: var(--text-muted);">Thank you for shopping with AuraMart. Your official invoice is generated below.</p>
+            <p style="color: var(--text-muted);">Thank you for shopping with AuraMart. Your order invoice is shown below.</p>
           </div>
 
           <div style="background: var(--bg-surface); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 2rem;">

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Development Internship Showcase | Rekha Kumari</title>
-  <meta name="description" content="Master portfolio portal showcasing all 5 weekly project deliverables for the Web Development Internship by Rekha Kumari.">
+  <title>Web Development Projects | Rekha Kumari</title>
+  <meta name="description" content="Showcase of weekly web development projects built during the internship by Rekha Kumari.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
     :root {
@@ -67,7 +67,6 @@
       overflow-x: hidden;
     }
 
-    /* Ambient background glows */
     body::before {
       content: '';
       position: fixed;
@@ -94,7 +93,6 @@
       z-index: -1;
     }
 
-    /* Header */
     .master-header {
       background: rgba(16, 23, 38, 0.8);
       backdrop-filter: blur(16px);
@@ -120,42 +118,33 @@
       align-items: center;
       gap: 0.75rem;
       font-family: var(--font-heading);
-      font-size: 1.4rem;
-      font-weight: 800;
+      font-size: 1.2rem;
+      font-weight: 700;
     }
 
     .brand-badge-logo {
-      width: 40px;
-      height: 40px;
-      background: var(--primary-gradient);
+      width: 36px;
+      height: 36px;
       border-radius: var(--radius-sm);
+      background: var(--primary-gradient);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 1.2rem;
-      box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
     }
 
     .theme-btn {
       background: var(--bg-surface);
       border: 1px solid var(--border-glass);
       color: var(--text-main);
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 0.55rem 0.85rem;
+      border-radius: var(--radius-md);
       cursor: pointer;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
-    .theme-btn:hover {
-      border-color: var(--primary);
-    }
-
-    /* Main Container */
     .container {
       max-width: 1240px;
       margin: 0 auto;
@@ -163,164 +152,114 @@
       flex: 1;
     }
 
-    /* Hero Section */
     .hero-box {
       text-align: center;
-      max-width: 850px;
-      margin: 0 auto 3.5rem;
+      margin-bottom: 3.5rem;
     }
 
     .internship-tag {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(16, 185, 129, 0.15);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: var(--accent-emerald);
-      padding: 0.4rem 1rem;
+      padding: 0.45rem 1rem;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
       border-radius: var(--radius-full);
       font-size: 0.85rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 1.25rem;
     }
 
     .hero-h1 {
       font-family: var(--font-heading);
-      font-size: 3rem;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
       line-height: 1.15;
       margin-bottom: 1.25rem;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
     }
 
     .gradient-span {
       background: var(--primary-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: inline-block;
     }
 
     .hero-sub {
       color: var(--text-muted);
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    /* Progress tracker */
-    .progress-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-glass);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 2rem;
+      font-size: 1.15rem;
+      line-height: 1.7;
       max-width: 750px;
-      margin: 0 auto 4rem;
-      box-shadow: var(--shadow-lg);
+      margin: 0 auto;
     }
 
-    .progress-header {
+    .pills-bar {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.75rem;
-      font-weight: 700;
-    }
-
-    .progress-bar {
-      height: 10px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-full);
-      overflow: hidden;
-      margin-bottom: 1rem;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background: linear-gradient(90deg, #3b82f6, #10b981);
-      width: 100%;
-      border-radius: var(--radius-full);
-    }
-
-    .milestone-pills {
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      font-size: 0.8rem;
-      color: var(--text-muted);
+      gap: 0.6rem;
+      margin-bottom: 3rem;
     }
 
-    /* Milestone Cards Grid */
+    .pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
     .cards-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
-    @media (min-width: 768px) {
-      .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1080px) {
-      .cards-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.75rem;
     }
 
     .milestone-card {
       background: var(--bg-card);
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(12px);
       border: 1px solid var(--border-glass);
       border-radius: var(--radius-lg);
       padding: 2rem;
       display: flex;
       flex-direction: column;
-      position: relative;
-      box-shadow: var(--shadow-lg);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     }
 
     .milestone-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--primary);
-      box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.3);
+      transform: translateY(-4px);
+      border-color: rgba(59, 130, 246, 0.4);
+      box-shadow: var(--shadow-lg);
     }
 
     .card-top {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       margin-bottom: 1.25rem;
     }
 
     .week-badge {
       background: rgba(59, 130, 246, 0.15);
       border: 1px solid rgba(59, 130, 246, 0.3);
-      color: var(--primary);
+      color: #60a5fa;
       padding: 0.3rem 0.75rem;
       border-radius: var(--radius-full);
       font-size: 0.8rem;
       font-weight: 700;
     }
 
-    .status-check {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      color: var(--accent-emerald);
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
     .card-icon {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     .card-title {
       font-family: var(--font-heading);
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       margin-bottom: 0.75rem;
       line-height: 1.3;
     }
@@ -377,11 +316,10 @@
       box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
     }
 
-    /* Footer */
     .master-footer {
       margin-top: auto;
       border-top: 1px solid var(--border-glass);
-      padding: 2.5rem 1.5rem;
+      padding: 2rem 1.5rem;
       background: var(--bg-surface);
     }
 
@@ -400,17 +338,17 @@
 </head>
 <body>
 
-  <!-- Top Navigation Header -->
+  <!-- Header -->
   <header class="master-header">
     <div class="header-inner">
       <div class="brand-wrap">
         <div class="brand-badge-logo">&#128187;</div>
-        <span>Rekha Kumari &bull; Internship Portfolio</span>
+        <span>Rekha Kumari &bull; Web Projects</span>
       </div>
 
       <div style="display: flex; gap: 1rem; align-items: center;">
         <a href="https://github.com/Rekha-1kumari/Web-technology-Internship-" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 0.9rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
-          <span>GitHub: Rekha-1kumari/Web-technology-Internship-</span> &rarr;
+          <span>GitHub Repo</span> &rarr;
         </a>
         <button class="theme-btn" id="theme-btn" title="Toggle Theme">&#9728;</button>
       </div>
@@ -423,145 +361,130 @@
     <!-- Hero Banner -->
     <section class="hero-box">
       <div class="internship-tag">
-        <span>&#10004;</span> All 5 Internship Milestones Completed
+        <span>&#10004;</span> Web Development Internship Portfolio
       </div>
       <h1 class="hero-h1">
-        Web Development <span class="gradient-span">Internship Showcase</span>
+        Web Development <span class="gradient-span">Project Showcase</span>
       </h1>
       <p class="hero-sub">
-        Explore the 5 comprehensive engineering deliverables built week-by-week, advancing from semantic accessibility and responsive CSS3 architectures to stateful JavaScript engines, asynchronous REST APIs, and a full-stack e-commerce capstone application.
+        A collection of weekly hands-on projects completed during my Web Development Internship, covering HTML5 semantic structure, modern responsive CSS layouts, JavaScript logic & state management, REST APIs, and a complete E-Commerce Single Page Application.
       </p>
     </section>
 
-    <!-- Progress Status Bar -->
-    <section class="progress-card">
-      <div class="progress-header">
-        <span>Submission Status: 5 of 5 Milestones Delivered</span>
-        <span style="color: var(--accent-emerald);">100% Complete</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-fill"></div>
-      </div>
-      <div class="milestone-pills">
-        <span>&#10003; Week 1: Semantic HTML5</span>
-        <span>&#10003; Week 2: Responsive CSS3</span>
-        <span>&#10003; Week 3: JS Logic & State</span>
-        <span>&#10003; Week 4: Async REST API</span>
-        <span>&#10003; Week 5: Capstone SPA</span>
-      </div>
-    </section>
+    <!-- Project Pills -->
+    <div class="pills-bar">
+      <span class="pill">&#10003; Week 1: Semantic HTML5</span>
+      <span class="pill">&#10003; Week 2: Responsive CSS3</span>
+      <span class="pill">&#10003; Week 3: JavaScript Todo App</span>
+      <span class="pill">&#10003; Week 4: Weather REST API</span>
+      <span class="pill">&#10003; Week 5: E-Commerce Store</span>
+    </div>
 
-    <!-- 5 Milestone Cards Grid -->
+    <!-- Cards Grid -->
     <section class="cards-grid">
       
       <!-- Week 1 -->
       <article class="milestone-card">
         <div class="card-top">
-          <span class="week-badge">Week 1 &bull; Due 10 Oct 2026</span>
-          <span class="status-check">&#10004; Complete</span>
+          <span class="week-badge">Week 1</span>
         </div>
         <div class="card-icon">&#9874;</div>
-        <h2 class="card-title">HTML5 Semantic Structure & Accessibility</h2>
+        <h2 class="card-title">Semantic Portfolio Website</h2>
         <p class="card-desc">
-          Multi-page portfolio adhering strictly to modern semantic HTML5 standards and WCAG 2.1 AAA accessibility. Features ARIA landmarks, keyboard skip links, SEO meta tags, and an accessible contact form scoring 100 on Lighthouse.
+          A multi-page personal portfolio site built using clean HTML5 semantic markup, structured navigation, accessible forms, and modular page layouts.
         </p>
         <ul class="tag-list">
-          <li class="tag">Semantic HTML5</li>
-          <li class="tag">WCAG 2.1 AAA</li>
-          <li class="tag">ARIA Landmarks</li>
-          <li class="tag">JSON-LD Schema</li>
+          <li class="tag">HTML5 Semantics</li>
+          <li class="tag">Multi-page</li>
+          <li class="tag">Forms</li>
+          <li class="tag">Accessibility</li>
         </ul>
         <a href="Week-01-Semantic-Portfolio/index.html" class="btn btn-primary" style="width: 100%;">
-          Launch Week 1 Project &rarr;
+          View Project &rarr;
         </a>
       </article>
 
       <!-- Week 2 -->
       <article class="milestone-card">
         <div class="card-top">
-          <span class="week-badge">Week 2 &bull; Due 17 Oct 2026</span>
-          <span class="status-check">&#10004; Complete</span>
+          <span class="week-badge">Week 2</span>
         </div>
         <div class="card-icon">&#127912;</div>
-        <h2 class="card-title">Advanced CSS3 & Responsive Architecture</h2>
+        <h2 class="card-title">Responsive Portfolio Design</h2>
         <p class="card-desc">
-          Visual overhaul featuring complex 2D CSS Grid bento layouts, Flexbox alignment, dynamic CSS variable theming (light/dark mode with localStorage persistence), glassmorphism, and mobile-first responsive media queries.
+          Modern responsive layout built with CSS Grid and Flexbox. Features dynamic Dark/Light theme switching with LocalStorage persistence and a mobile slide-out navigation menu.
         </p>
         <ul class="tag-list">
-          <li class="tag">CSS Grid 2D</li>
-          <li class="tag">CSS Custom Props</li>
-          <li class="tag">Light/Dark Mode</li>
-          <li class="tag">Glassmorphism</li>
+          <li class="tag">CSS Grid</li>
+          <li class="tag">Flexbox</li>
+          <li class="tag">Dark/Light Mode</li>
+          <li class="tag">Responsive Design</li>
         </ul>
         <a href="Week-02-Responsive-Portfolio/index.html" class="btn btn-primary" style="width: 100%;">
-          Launch Week 2 Project &rarr;
+          View Project &rarr;
         </a>
       </article>
 
       <!-- Week 3 -->
       <article class="milestone-card">
         <div class="card-top">
-          <span class="week-badge">Week 3 &bull; Due 24 Oct 2026</span>
-          <span class="status-check">&#10004; Complete</span>
+          <span class="week-badge">Week 3</span>
         </div>
         <div class="card-icon">&#9989;</div>
-        <h2 class="card-title">JavaScript Logic & State Management</h2>
+        <h2 class="card-title">TaskMaster - Todo App</h2>
         <p class="card-desc">
-          TaskMaster Pro: interactive task manager mastering DOM manipulation, delegated event listeners, and automatic localStorage persistence. Features full CRUD, subtasks, category/priority filters, and real-time search.
+          Interactive task management app with full CRUD operations, category tags, priority levels, subtask checklists, real-time search, and automatic browser LocalStorage saving.
         </p>
         <ul class="tag-list">
-          <li class="tag">CRUD Operations</li>
+          <li class="tag">JavaScript ES6</li>
           <li class="tag">LocalStorage</li>
-          <li class="tag">Event Delegation</li>
-          <li class="tag">Search & Filters</li>
+          <li class="tag">DOM Manipulation</li>
+          <li class="tag">Filters & Search</li>
         </ul>
         <a href="Week-03-TaskMaster-TodoApp/index.html" class="btn btn-primary" style="width: 100%;">
-          Launch Week 3 Project &rarr;
+          View Project &rarr;
         </a>
       </article>
 
       <!-- Week 4 -->
       <article class="milestone-card">
         <div class="card-top">
-          <span class="week-badge">Week 4 &bull; Due 31 Oct 2026</span>
-          <span class="status-check">&#10004; Complete</span>
+          <span class="week-badge">Week 4</span>
         </div>
         <div class="card-icon">&#127780;</div>
-        <h2 class="card-title">Asynchronous JS & RESTful APIs</h2>
+        <h2 class="card-title">WeatherPulse - Weather Dashboard</h2>
         <p class="card-desc">
-          WeatherPulse Pro: Real-time meteorological dashboard fetching Open-Meteo REST endpoints using modern async/await. Features geolocation coordinates, 24-hour horizontal forecast scroll, 7-day outlook, and offline error resilience.
+          Real-time weather dashboard fetching forecast data from Open-Meteo REST API using async/await. Features city search, geolocation lookup, 24-hour forecast, and Celsius/Fahrenheit toggle.
         </p>
         <ul class="tag-list">
           <li class="tag">Fetch API</li>
           <li class="tag">Async / Await</li>
-          <li class="tag">Open-Meteo REST</li>
+          <li class="tag">Open-Meteo API</li>
           <li class="tag">Geolocation</li>
         </ul>
         <a href="Week-04-WeatherPulse-Dashboard/index.html" class="btn btn-primary" style="width: 100%;">
-          Launch Week 4 Project &rarr;
+          View Project &rarr;
         </a>
       </article>
 
       <!-- Week 5 -->
       <article class="milestone-card" style="grid-column: 1 / -1;">
         <div class="card-top">
-          <span class="week-badge">Week 5 &bull; Due 02 Nov 2026 (Capstone)</span>
-          <span class="status-check">&#10004; Complete</span>
+          <span class="week-badge">Week 5 &bull; Capstone Project</span>
         </div>
         <div class="card-icon">&#128722;</div>
-        <h2 class="card-title">AuraMart Next-Gen E-Commerce Capstone Platform</h2>
+        <h2 class="card-title">AuraMart - E-Commerce Single Page App</h2>
         <p class="card-desc">
-          Production-ready Single Page Application combining all previous skills: client-side hash routing, reactive centralized state store, multi-facet product filtering, persistent sliding cart drawer, promo code discounts, and multi-step checkout simulation with invoice printing. Ready for 1-click deployment to Vercel and Netlify.
+          Full-featured E-Commerce Single Page Application (SPA) with client-side hash routing, product catalog with search & category filters, interactive slide-out cart drawer, wishlist, discount codes, and multi-step checkout with printable order invoice.
         </p>
         <ul class="tag-list">
-          <li class="tag">SPA Hash Router</li>
-          <li class="tag">Reactive State Store</li>
-          <li class="tag">Checkout Engine</li>
-          <li class="tag">Invoice Generator</li>
-          <li class="tag">Vercel & Netlify Configs</li>
+          <li class="tag">SPA Hash Routing</li>
+          <li class="tag">Shopping Cart</li>
+          <li class="tag">Product Filters</li>
+          <li class="tag">Checkout & Invoice</li>
         </ul>
         <a href="Week-05-AuraMart-Ecommerce-Capstone/index.html" class="btn btn-primary" style="width: 100%;">
-          Launch Week 5 Capstone Application &rarr;
+          View Capstone Project &rarr;
         </a>
       </article>
 
@@ -569,14 +492,14 @@
 
   </main>
 
-  <!-- Master Footer -->
+  <!-- Footer -->
   <footer class="master-footer">
     <div class="footer-content">
       <div>
-        <strong>Rekha Kumari</strong> &bull; Web Development Internship Deliverables
+        <strong>Rekha Kumari</strong> &bull; Web Development Internship Projects
       </div>
       <div>
-        <span>Repository: <a href="https://github.com/Rekha-1kumari/Web-technology-Internship-" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">github.com/Rekha-1kumari/Web-technology-Internship-</a></span>
+        <span>GitHub: <a href="https://github.com/Rekha-1kumari/Web-technology-Internship-" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Rekha-1kumari/Web-technology-Internship-</a></span>
       </div>
     </div>
   </footer>

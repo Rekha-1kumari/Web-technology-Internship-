@@ -1,6 +1,4 @@
-/* ==========================================================================
-   AuraMart E-Commerce: Product Catalog Database
-   ========================================================================== */
+// AuraMart Product Catalog Data
 
 const PRODUCTS_DATA = [
   {

@@ -1,7 +1,4 @@
-/* ==========================================================================
-   Week 4: Asynchronous JavaScript & RESTful APIs (WeatherPulse Pro)
-   Student: Rekha Kumari | Web Development Internship
-   ========================================================================== */
+// Week 4: WeatherPulse Live Dashboard Logic
 
 (function() {
   'use strict';
@@ -145,7 +142,7 @@
     }
   }
 
-  // Asynchronous REST API: Telemetry & Multi-Day Forecast
+  // Fetch Weather Data & Forecast
   async function fetchWeatherData(lat, lon, timezone) {
     try {
       const tz = timezone || 'auto';
@@ -184,7 +181,7 @@
     weatherCondEl.textContent = meta.desc;
     feelsLikeEl.textContent = `Feels like ${formatTemp(current.apparent_temperature)}`;
 
-    // 6 Telemetry Metrics
+    // Weather Details
     humidityEl.textContent = `${current.relative_humidity_2m}%`;
     windSpeedEl.textContent = formatSpeed(current.wind_speed_10m);
     pressureEl.textContent = `${Math.round(current.surface_pressure)} hPa`;

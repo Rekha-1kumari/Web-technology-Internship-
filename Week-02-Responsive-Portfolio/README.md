@@ -1,34 +1,29 @@
-﻿# Week 2: Advanced CSS3 & Responsive Architecture
+﻿# Week 2: Responsive Portfolio Website
 
-**Student Developer:** Rekha Kumari  
+**Author:** Rekha Kumari  
 **Repository:** [github.com/Rekha-1kumari/Web-technology-Internship-](https://github.com/Rekha-1kumari/Web-technology-Internship-)  
-**Due Date:** 17 Oct 2026 (Completed)
 
 ---
 
 ## Project Overview
-This project transforms the semantic portfolio into a visually stunning, fully responsive design using advanced CSS3 properties and modern layout architectures.
+This project focuses on responsive web design using modern CSS3 features. It introduces CSS Grid and Flexbox layouts, dynamic Dark and Light mode theme switching, and mobile-friendly drawer navigation.
 
-### Key Features Implemented:
-1. **CSS Grid 2D Layouts:**
-   - Bento-box hero layout showcasing primary hero, live metrics counters, and responsive viewport specifications.
-   - Dynamic auto-fit project showcase grid (`grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))`).
-2. **Flexbox Localized Alignment:**
-   - Sticky navbar with brand badge, navigation links, and theme toggle.
-   - Social links, card badges, and action button groups.
-3. **Dynamic Custom Properties (Light/Dark Mode):**
-   - Seamless `:root` and `[data-theme="dark"]` CSS variables for background, text, borders, glassmorphic filters, and gradient glows.
-   - Theme toggle button with automatic local storage persistence and system preference fallback.
-4. **Mobile-First Responsive Queries:**
-   - Designed for Mobile (< 640px), Tablet (768px - 1024px), and Desktop (> 1024px).
-   - Mobile slide-out drawer menu with animated hamburger icon.
-5. **Modern Visual Aesthetics:**
-   - Glassmorphism (`backdrop-filter: blur(16px)`).
-   - Custom smooth animations (`@keyframes pulseDot`, 3D card tilt & hover effects).
+### Key Features:
+1. **CSS Grid & Flexbox:**
+   - Multi-column grid layout with auto-fit cards.
+   - Sticky navbar with logo, links, and theme toggle using Flexbox.
+2. **Dynamic Dark / Light Mode:**
+   - Managed with CSS custom properties (`:root` and `[data-theme="dark"]`).
+   - Remembers user's theme selection across page reloads via `localStorage`.
+3. **Mobile-First Responsive Design:**
+   - Breakpoints for mobile (< 640px), tablet (768px), and desktop (1024px+).
+   - Smooth animated hamburger menu with slide-out navigation drawer.
+4. **Modern UI Elements:**
+   - Glassmorphic card styling and subtle hover transitions.
 
 ---
 
-## How to Test:
-- Open `index.html` in your browser.
-- Click the Moon/Sun toggle in the navbar to switch between Dark and Light mode.
-- Resize the browser window to see the responsive layout adapt seamlessly.
+## How to Test
+- Open `index.html` in any browser.
+- Click the theme toggle icon in the navbar to switch between Dark and Light themes.
+- Resize your browser window or test on a mobile device to see the responsive layout adapt.

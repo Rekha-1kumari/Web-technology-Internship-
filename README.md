@@ -1,65 +1,76 @@
-﻿# Web Development Internship — Complete 5-Week Portfolio Deliverables
+﻿# Web Development Internship Projects
 
-**Developer:** Rekha Kumari  
-**Repository:** [https://github.com/Rekha-1kumari/Web-technology-Internship-](https://github.com/Rekha-1kumari/Web-technology-Internship-)  
-**Status:** All 5 Milestones Completed (100% Delivered)
+Welcome to my Web Development Internship project showcase! This repository contains all weekly projects and assignments completed during the internship, starting from HTML5 and CSS3 fundamentals to interactive JavaScript, REST API integration, and a Single Page Application (SPA).
 
----
+## 🚀 Projects Overview
 
-## Executive Summary
-This repository contains the complete, week-by-week implementation of all 5 milestones for the Web Development Internship. Every project is fully realized, adhering to modern web standards, WCAG 2.1 AAA accessibility, stateful client-side architecture, and production readiness.
-
----
-
-## Weekly Deliverables Directory
-
-| Week | Milestone Title | Directory | Due Date | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **Week 1** | **HTML5 Semantic Structure & Accessibility** | [`Week-01-Semantic-Portfolio/`](Week-01-Semantic-Portfolio/) | 10 Oct 2026 | **Complete (100/100 Lighthouse)** |
-| **Week 2** | **Advanced CSS3 & Responsive Architecture** | [`Week-02-Responsive-Portfolio/`](Week-02-Responsive-Portfolio/) | 17 Oct 2026 | **Complete (Grid 2D & Theme Sync)** |
-| **Week 3** | **JavaScript Logic & State Management** | [`Week-03-TaskMaster-TodoApp/`](Week-03-TaskMaster-TodoApp/) | 24 Oct 2026 | **Complete (CRUD & LocalStorage)** |
-| **Week 4** | **Asynchronous JavaScript & RESTful APIs** | [`Week-04-WeatherPulse-Dashboard/`](Week-04-WeatherPulse-Dashboard/) | 31 Oct 2026 | **Complete (Open-Meteo REST & GPS)** |
-| **Week 5** | **Full-Stack Capstone E-Commerce SPA** | [`Week-05-AuraMart-Ecommerce-Capstone/`](Week-05-AuraMart-Ecommerce-Capstone/) | 02 Nov 2026 | **Complete (SPA Router & Checkout)** |
+| Week | Project | Description | Live Demo / Code |
+| :--- | :--- | :--- | :--- |
+| **Week 1** | **Semantic Portfolio** | Multi-page personal portfolio built with semantic HTML5 elements and clean accessible markup. | [View Project](Week-01-Semantic-Portfolio/) |
+| **Week 2** | **Responsive Portfolio** | Modern responsive website using CSS Grid, Flexbox, and Dark/Light mode theme switching. | [View Project](Week-02-Responsive-Portfolio/) |
+| **Week 3** | **TaskMaster (Todo App)** | Interactive task manager with categories, priorities, subtasks, and LocalStorage persistence. | [View Project](Week-03-TaskMaster-TodoApp/) |
+| **Week 4** | **WeatherPulse (Weather App)** | Real-time weather dashboard fetching live forecast data using the Open-Meteo REST API. | [View Project](Week-04-WeatherPulse-Dashboard/) |
+| **Week 5** | **AuraMart (E-Commerce Store)** | Capstone single-page e-commerce app with product catalog, cart drawer, and checkout. | [View Project](Week-05-AuraMart-Ecommerce-Capstone/) |
 
 ---
 
-## Detailed Milestone Descriptions
-
-### [Week 1: HTML5 Semantic Structure & Accessibility](Week-01-Semantic-Portfolio/)
-- **Core Semantic Elements:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<figure>`, `<figcaption>`, `<time>`, `<address>`.
-- **WCAG 2.1 AAA Accessibility:** Screen reader skip-to-content link, landmark roles (`banner`, `navigation`, `main`, `contentinfo`), high-contrast color ratios (> 14:1).
-- **SEO & Structured Data:** OpenGraph, Twitter Cards, Canonical URLs, and JSON-LD schema (`schema.org/Person`).
-- **Accessible Contact Form:** Grouped `<fieldset>`, associated `<label for="...">`, and live-region announcements (`aria-live="polite"`).
-
-### [Week 2: Advanced CSS3 & Responsive Architecture](Week-02-Responsive-Portfolio/)
-- **CSS Grid 2D Layouts:** Bento-box hero layout showcasing primary hero, live metrics counters, and responsive viewport specifications.
-- **Flexbox Localized Alignment:** Sticky glassmorphic navbar with logo icon, navigation links, and theme toggle.
-- **Dynamic Theming:** Custom properties (`:root` and `[data-theme="dark"]`) for real-time light/dark mode switching with automatic localStorage persistence.
-- **Mobile-First Responsive Queries:** Adapts fluidly across mobile (< 640px), tablet (768px), and desktop (1024px+).
-
-### [Week 3: JavaScript Logic & State Management (TaskMaster Pro)](Week-03-TaskMaster-TodoApp/)
-- **Full CRUD Engine:** Create, read, update, and delete tasks with custom subtask checklists.
-- **Local Persistence:** Continuous automatic synchronization with `window.localStorage` plus JSON file export.
-- **Advanced Filtering & Sorting:** Filter by status (`All`, `Active`, `Completed`), category (`Work`, `Study`, `Personal`), priority (`High`, `Medium`, `Low`), and real-time keyword search.
-- **Event Delegation:** High-performance single listener attached to container element.
-
-### [Week 4: Asynchronous JavaScript & RESTful APIs (WeatherPulse Pro)](Week-04-WeatherPulse-Dashboard/)
-- **REST API Integration:** Modern `fetch()` and `async/await` consuming the Open-Meteo REST API (zero API key limits).
-- **Error Resilience:** Offline status detection (`navigator.onLine`) and comprehensive `try/catch` error banners.
-- **Nested JSON Data:** Formats 6 metrics (Humidity, Wind Speed, Pressure, UV Index, Sunrise, Sunset), 24-hour horizontal forecast trend, and 7-day outlook.
-- **Geolocation & Unit Toggle:** Browser `navigator.geolocation` coordinate lookup and instant Celsius/Fahrenheit toggle.
-
-### [Week 5: Full-Stack Capstone E-Commerce Platform (AuraMart)](Week-05-AuraMart-Ecommerce-Capstone/)
-- **Modular SPA Architecture:** Hash-based router (`#/home`, `#/products`, `#/product/:id`, `#/cart`, `#/checkout`, `#/order-success`, `#/wishlist`).
-- **Centralized Reactive Store:** Cart and Wishlist management with localStorage persistence and discount coupon engine (`SAVE20`, `FREESHIP`).
-- **Interactive Multi-Step Checkout:** Form validation, payment simulation, and official invoice receipt generation with print capability.
-- **Zero-Config Deployment:** Includes `vercel.json` and `netlify.toml` for 1-click deployment to Vercel, Netlify, or GitHub Pages.
+## 🛠️ Tech Stack & Skills
+- **Frontend:** HTML5, CSS3 (Flexbox & CSS Grid), JavaScript (ES6+)
+- **APIs & Asynchronous JS:** Fetch API, Async/Await, RESTful API integration
+- **Storage & State:** Browser `localStorage`, Client-side state handling
+- **Responsive Design:** Mobile-first layout, dynamic themes (Light/Dark mode)
 
 ---
 
-## How to Run & Review
-Open `index.html` located in the root repository folder using any modern web browser or start a lightweight HTTP server:
-```bash
-python3 -m http.server 8000
-```
-Then navigate to `http://localhost:8000` to browse the interactive Master Showcase.
+## 📂 Project Highlights
+
+### 1. Week 1: Semantic Portfolio
+- Structured with HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- Multi-page navigation (Home, About, Projects, Contact).
+- Clean and accessible contact form.
+
+### 2. Week 2: Responsive Portfolio
+- CSS Grid 2D layout and Flexbox navigation.
+- Dark and Light mode toggle with user preference saved in LocalStorage.
+- Fully responsive across mobile, tablet, and desktop screens.
+
+### 3. Week 3: TaskMaster - Todo App
+- Create, edit, complete, and delete tasks (CRUD).
+- Add subtasks, categories (Work, Study, Personal), and priority levels (High, Medium, Low).
+- Search bar and filtering by status and category.
+- Tasks are automatically saved in browser LocalStorage.
+
+### 4. Week 4: WeatherPulse - Weather Dashboard
+- Fetches live weather data from Open-Meteo REST API.
+- Search weather by city or detect current location using browser Geolocation.
+- Displays current temperature, feels like, humidity, wind speed, pressure, UV index, and 7-day forecast.
+- Temperature toggle between Celsius (°C) and Fahrenheit (°F).
+
+### 5. Week 5: AuraMart - E-Commerce Store (Capstone)
+- Single Page Application (SPA) with hash routing (`#/home`, `#/products`, `#/cart`, `#/checkout`).
+- Product catalog with search, category filtering, and sorting.
+- Slide-out cart drawer, quantity updates, and promo code support (`SAVE20`).
+- Checkout form with simulated payment and printable invoice.
+
+---
+
+## 💻 How to Run Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Rekha-1kumari/Web-technology-Internship-.git
+   ```
+2. Navigate into the folder:
+   ```bash
+   cd Web-technology-Internship-
+   ```
+3. Open `index.html` in your browser, or start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+4. Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+---
+
+**Author:** Rekha Kumari  
+**GitHub:** [@Rekha-1kumari](https://github.com/Rekha-1kumari)

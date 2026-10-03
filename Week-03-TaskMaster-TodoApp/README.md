@@ -1,39 +1,33 @@
-﻿# Week 3: JavaScript Logic & State Management (TaskMaster Pro)
+﻿# Week 3: TaskMaster - Todo List Application
 
-**Student Developer:** Rekha Kumari  
+**Author:** Rekha Kumari  
 **Repository:** [github.com/Rekha-1kumari/Web-technology-Internship-](https://github.com/Rekha-1kumari/Web-technology-Internship-)  
-**Due Date:** 24 Oct 2026 (Completed)
 
 ---
 
 ## Project Overview
-TaskMaster Pro is a client-side state-driven task management application built with pure Vanilla JavaScript, mastering DOM manipulation, delegated event listeners, and automatic `window.localStorage` persistence.
+TaskMaster is an interactive, browser-based task management web application built with vanilla JavaScript. It demonstrates client-side state handling, DOM manipulation, event delegation, and automatic browser `localStorage` synchronization.
 
-### Key Features Implemented:
-1. **Full CRUD Architecture:**
-   - **Create:** Modal form supporting title, multiline description, category tags, priority levels, due date picker, and subtasks.
-   - **Read:** Dynamic card rendering with status styling, priority badges, and checklists.
-   - **Update:** Complete task editing and immediate state synchronization.
-   - **Delete:** Single task removal and bulk "Clear Completed" action.
-2. **Local Data Persistence:**
-   - Automatically synchronizes all task state, completion flags, and subtasks to `window.localStorage`.
-   - Data persists across browser refreshes and tab closures.
-   - Built-in JSON Export backup functionality.
-3. **Advanced Filtering & Sorting:**
-   - Status filters: `All`, `Active`, `Completed`.
-   - Category filtering (`Work`, `Study`, `Personal`).
-   - Priority filtering (`High`, `Medium`, `Low`).
-   - Real-time instant search input matching titles, descriptions, and categories.
-   - Multi-criteria sorting (Newest, Due Date, Priority, Alphabetical).
-4. **Performance & Event Delegation:**
-   - Uses a single delegated click listener on `#task-list` for maximum DOM performance.
-   - Real-time progress bar calculation and completion percentage metrics.
-   - Keyboard shortcuts (`/` to focus search, `Esc` to close modal).
+### Key Features:
+1. **Full CRUD Operations:**
+   - **Create:** Add new tasks with title, description, category, priority, due date, and subtask checklists.
+   - **Read:** Card-based task list with category and priority badges.
+   - **Update:** Edit task details, toggle completion status, and check off subtasks.
+   - **Delete:** Remove individual tasks or clear all completed tasks.
+2. **LocalStorage Persistence:**
+   - Tasks and subtasks are automatically saved to browser `localStorage`.
+   - Data persists across browser refreshes and closing tabs.
+   - Includes JSON data export backup feature.
+3. **Filtering & Search:**
+   - Filter by status (`All`, `Active`, `Completed`).
+   - Filter by category (`Work`, `Study`, `Personal`).
+   - Filter by priority (`High`, `Medium`, `Low`).
+   - Real-time search by task title or description.
+4. **Productivity Metrics:**
+   - Visual progress bar showing percentage of completed tasks.
+   - Task count counters for active and completed tasks.
 
 ---
 
-## How to Test:
-- Open `index.html` in your browser.
-- Add, complete, and delete tasks to test CRUD operations.
-- Refresh the browser to verify data persistence in localStorage.
-- Use the search bar and filter dropdowns to test real-time state filtering.
+## How to Run
+Open `index.html` directly in any web browser to use the application.

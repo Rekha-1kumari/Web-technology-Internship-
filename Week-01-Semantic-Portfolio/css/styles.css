@@ -1,13 +1,10 @@
-/* ==========================================================================
-   Week 1: HTML5 Semantic Structure & Accessibility (WCAG 2.1 AAA Compliant)
-   Student: Rekha Kumari | Web Development Internship
-   ========================================================================== */
+﻿/* Week 1: Semantic Portfolio Styles */
 
 :root {
   --color-bg: #f8fafc;
   --color-surface: #ffffff;
-  --color-text-main: #0f172a;       /* 14.8:1 contrast on white (WCAG AAA) */
-  --color-text-muted: #334155;      /* 9.7:1 contrast on white (WCAG AAA) */
+  --color-text-main: #0f172a;       
+  --color-text-muted: #334155;      
   --color-primary: #1d4ed8;         /* Deep accessible blue */
   --color-primary-hover: #1e40af;
   --color-primary-light: #eff6ff;

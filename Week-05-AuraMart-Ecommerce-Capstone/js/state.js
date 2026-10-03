@@ -1,6 +1,4 @@
-/* ==========================================================================
-   AuraMart E-Commerce: Reactive Centralized State Store
-   ========================================================================== */
+// AuraMart Cart & State Store
 
 (function() {
   'use strict';
@@ -12,7 +10,7 @@
 
   // Valid promo discount codes
   const PROMO_CODES = {
-    'SAVE20': { discount: 0.20, label: '20% Off Internship Special' },
+    'SAVE20': { discount: 0.20, label: '20% Off Discount' },
     'FREESHIP': { freeShipping: true, label: 'Free Express Shipping' },
     'AURA10': { discount: 0.10, label: '10% Welcome Discount' }
   };

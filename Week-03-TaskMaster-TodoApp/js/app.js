@@ -1,7 +1,4 @@
-/* ==========================================================================
-   Week 3: JavaScript Logic & State Management (TaskMaster Pro)
-   Student: Rekha Kumari | Web Development Internship
-   ========================================================================== */
+﻿// Week 3: TaskMaster Todo App Logic
 
 (function() {
   'use strict';

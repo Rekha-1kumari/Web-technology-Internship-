@@ -1,4 +1,4 @@
-// Week 2: Responsive Interaction & Theme Controller
+﻿// Week 2: Responsive Interaction & Theme Controller
 (function() {
   const THEME_KEY = 'rekha_portfolio_theme';
   const rootElement = document.documentElement;

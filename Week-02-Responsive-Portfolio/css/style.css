@@ -1,7 +1,4 @@
-/* ==========================================================================
-   Week 2: Advanced CSS3 & Responsive Architecture
-   Student: Rekha Kumari | Web Development Internship
-   ========================================================================== */
+﻿/* Week 2: Responsive Portfolio Styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
@@ -358,9 +355,7 @@ a {
   border-color: var(--accent-primary);
 }
 
-/* ==========================================================================
-   CSS GRID 2D ARCHITECTURE (Bento Grid Hero & Showcase)
-   ========================================================================== */
+/* Week 2: Responsive Portfolio Styles */
 .bento-hero-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -701,9 +696,7 @@ a {
   color: var(--text-subtle);
 }
 
-/* ==========================================================================
-   MOBILE-FIRST RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
+/* Week 2: Responsive Portfolio Styles */
 
 /* Tablet & Mid-size screens (min-width: 768px) */
 @media (min-width: 768px) {
